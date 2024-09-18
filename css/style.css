@@ -1,0 +1,85 @@
+body {
+  /* font-family: Arial, sans-serif; */
+  font-family:"Hiragino Mincho ProN", "YuMincho", serif;
+  text-align: center;
+  background-color: #000000;
+  /* background-color: #202020; */
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #fafafa;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+#dropZone {
+  width: 300px;
+  height: 90px;
+  border: 1px solid #ccc;
+  /* border-radius: 7px; */
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #fafafa;
+  transition: all 0.5s;
+}
+
+#dropZone:hover {
+  background-color: #fafafa;
+  color: #575757;
+}
+
+#dropZone.dragover {
+  background-color: #fafafa;
+  color: #575757;
+}
+
+#audioFileInput {
+  display: none;
+}
+
+#controls {
+  margin: 20px 0;
+}
+
+button {
+  font-family:"Hiragino Mincho ProN", "YuMincho", serif;
+  margin: 0px 12px;
+  margin-top: 10px;
+  padding: 0px 2px;
+  padding-bottom: 1px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fafafa;
+  background-color: transparent;
+  /* border-bottom: 1px solid rgb(255, 255, 255, 1); */
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid #fafafa;
+  transition: all .7s;
+}
+
+button:hover {
+  animation:  .3s ease-in-out 0s 1 bright;
+}
+
+@keyframes bright {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+canvas {
+  margin-top: 20px;
+  /* border: 1px solid #ccc; */
+}
