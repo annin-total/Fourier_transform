@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音声ファイル分析ツール</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>音声ファイル分析ツール</h1>
+        <div id="dropZone">
+            ここに音声ファイルをドラッグ&ドロップ
+            <input type="file" id="audioFileInput" accept="audio/*">
+        </div>
+        <div id="controls">
+            <button id="playBtn" disabled>再生</button>
+            <button id="pauseBtn" disabled>一時停止</button>
+            <button id="loopBtn">ループ再生</button>
+            <button id="resetBtn">リセット</button>
+        </div>
+        <canvas id="frequencyCanvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
